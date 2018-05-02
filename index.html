@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- Макет на основе float
+Глядя на CSS, можно заметить несколько хаков, необходимых для работы макета (отрицательные границы, свойство clear: both, жёстко запрограммированные вычисления ширины и др.) 
+Неплохо, но по трём цветам видно, что у колонок неодинаковая высота, а страница не заполняет всю высоту экрана. Это неизбежные проблемы при использовании подхода на основе float. Всё, что может сделать float, это прижать контент к левой или правой границе секции — в CSS нет средств повлиять на высоту контента в других секциях. В течение многих лет у проблемы отсутствовало простое решение, пока не появились макеты на основе flexbox.
+  -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Современный CSS - Макет на основе float</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Тег <header> задает «шапку» сайта или раздела, в которой обычно располагается заголовок. -->
+    <header>This is the header.</header>
+    <!-- Элемент <main> предназначен для основного содержимого документа. Содержимое должно быть уникальным и не включать типовые блоки вроде шапки сайта, подвала, навигации, боковой панели, формы поиска и т. п.  -->
+    <main>
+        <h1>This is the main content.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
+            nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
+            molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim
+            qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla.</p>
+    </main>
+    <!-- Боковая панель (слева), а вообще является контейнером для навигации - группы ссылок, ведущих на другие страницы сайта или на разделы текущей веб-страницы. Если на странице несколько блоков ссылок, то в <nav> обычно помещают приоритетные ссылки. Также допустимо использовать несколько тегов <nav> в документе. Запрещается вкладывать <nav> внутрь <address>. -->
+    <nav>
+        <h4>This is the navigation section.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat.</p>
+    </nav>
+    <!-- Боковая панель (справа) - пределяет блок сбоку от контента для размещения рубрик, ссылок на архив, меток и другой информации. Такой блок, как правило, называется «сайдбар» или «боковая панель». -->
+    <aside>
+        <h4>This is an aside section.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+            magna aliquam erat volutpat.</p>
+    </aside>
+    <!-- Подвал сайта -->
+    <footer>This is the footer.</footer>
+</body>
+
+</html>
